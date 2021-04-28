@@ -44,7 +44,7 @@ class EventGuests {
 
     // an EventGuests that uses AVL trees under the hood
     // idk how to create an AVL
-    EventGuests guestsAVLs = new EventGuests(new EmptyBST());
+    EventGuests guestsAVLs = new EventGuests(new EmptyAVL());
 
 
 }

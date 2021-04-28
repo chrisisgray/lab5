@@ -30,12 +30,17 @@ class NonEmptyList implements IList {
 
     @Override
     public ISet addElt(String elt) {
-        return new NonEmptyList(elt, this.restOfGuests.addElt(this.guest));
+        return new NonEmptyList(elt, (IList) this.restOfGuests.addElt(this.guest));
     }
 
     @Override
     public boolean hasElt(String elt) {
-        return false;
+     if(this.guest.equals(elt)) {
+         return true;
+     } else {
+         this.restOfGuests.hasElt(elt);
+     }
+     return false;
     }
 
     @Override
