@@ -8,8 +8,6 @@ class EventGuests {
         this.guests = guests;
     }
 
-
-
     // record a new guest as coming (add the guest to the set)
 
     void addGuest(String newGuestName) {
@@ -17,7 +15,6 @@ class EventGuests {
         this.guests = guests.addElt(newGuestName);
 
     }
-
 
 
     // check whether a guest is coming (use hasElt() to see if
@@ -35,16 +32,6 @@ class EventGuests {
     }
 
     // an EventGuests that uses LinkedLists under the hood
-
-    EventGuests guestsLists = new EventGuests(new EmptyList());
-
-    // an EventGuests that uses BSTs under the hood
-
-    EventGuests guestsBSTs = new EventGuests(new EmptyBST());
-
-    // an EventGuests that uses AVL trees under the hood
-    // idk how to create an AVL
-    EventGuests guestsAVLs = new EventGuests(new EmptyAVL());
 
 
 }

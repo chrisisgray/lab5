@@ -75,38 +75,3 @@ class DataBST implements IBST {
     }
 }
 
-class EmptyAVL implements IBST {
-
-    @Override
-    public ISet addElt(String elt) {
-        return null;
-    }
-
-    @Override
-    public boolean hasElt(String elt) {
-        return false;
-    }
-
-    @Override
-    public int size() {
-        return 0;
-    }
-}
-
-class DataAVL implements IBST {
-
-    @Override
-    public ISet addElt(String elt) {
-        return null;
-    }
-
-    @Override
-    public boolean hasElt(String elt) {
-        return false;
-    }
-
-    @Override
-    public int size() {
-        return 0;
-    }
-}
